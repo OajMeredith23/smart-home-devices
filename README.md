@@ -24,8 +24,6 @@ Assuming `DEVICE_NAME = "pico"` (as in `secrets.py`):
     - Payload: Integer `0`–`100` (percent)
 - `pico/ping` — Ping the device:
     - Any payload; device will print a message when received
-- `pico/status` — Heartbeat/status topic:
-    - Payload: `online` (when device is connected), `offline` (if device disconnects)
 
 ## Example MQTT Requests
 
@@ -59,12 +57,6 @@ payload: (any value)
 ```
 
 e.g. `mosquitto_pub -h localhost -t pico/ping -m "hello"`
-
-### Check Device Status
-```
-topic: pico/status
-payload: online | offline
-```
 
 ## Usage
 1. Flash the code to your Pico running MicroPython.
