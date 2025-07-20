@@ -43,7 +43,7 @@ payload: off
 
 e.g. `mosquitto_pub -h localhost -t pico/relay -m "off"`
 
-### Set LED Brightness to 75% (example of using a range, not implemented with any hardware)
+### Set LED strip Brightness to 75%
 ```
 topic: pico/led/brightness
 payload: 75
